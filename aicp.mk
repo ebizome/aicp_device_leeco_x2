@@ -42,3 +42,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
 TARGET_VENDOR := leeco
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Izumi Inami (droidfivex)"
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
+-include vendor/aicp/configs/bootanimation.mk
