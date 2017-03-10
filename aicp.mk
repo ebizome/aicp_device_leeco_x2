@@ -24,6 +24,9 @@ $(call inherit-product, device/leeco/x2/device.mk)
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 PRODUCT_NAME := aicp_x2
 PRODUCT_DEVICE := x2
 PRODUCT_MANUFACTURER := LeMobile
